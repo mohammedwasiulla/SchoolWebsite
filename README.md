@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# SchoolWebsite
+# SchoolWebsite(React App) 
 Website to connect with school products
 # EduSupply Website
 
@@ -40,7 +40,7 @@ Website to connect with school products
 Feel free to fork this repository and submit pull requests for improvements or new features!
 
  Technical Implementation
-HTML/CSS
+This project is completely developed using react framework which contains jsx 
 Used semantic HTML for better accessibility and SEO.
 
 Leverage modern CSS techniques (Flexbox/Grid) for creating the layout.

@@ -1,0 +1,197 @@
+/* Products Section */
+.products {
+    padding: 60px 5vw;
+    background: linear-gradient(135deg, var(--bg-dark), #530b9a);
+    text-align: center;
+}
+/* Heading Styling */
+.products h2 {
+    color: #ff5733; /* Custom color for the heading */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    padding: 20px 5vw;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure only one product is visible at a time */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-item img {
+    width: 80%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Styling Prices */
+.carousel-item .price {
+    font-size: 1.2rem;
+    color: #ff5733;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navigation Buttons */
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, transform 0.2s;
+    z-index: 100;
+}
+
+/* Move buttons outside the inner carousel */
+.carousel-prev {
+    left: -40px; /* Positioned outside the inner carousel */
+}
+
+.carousel-next {
+    right: -20px; /* Positioned outside the inner carousel */
+}
+
+/* Hover Effect */
+.carousel-prev:hover,
+.carousel-next:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Corrected Arrow Icons */
+.carousel-prev::before {
+    content: "◀";
+    font-size: 1.8rem;
+}
+
+.carousel-next::before {
+    content: "▶";
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .carousel {
+        padding: 15px 4vw;
+    }
+    .carousel-prev { left: 5px; }
+    .carousel-next { right: 5px; }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        padding: 15px 3vw;
+        max-width: 95%;
+    }
+    .carousel-item img {
+        width: 90%;
+    }
+    .carousel-prev,
+    .carousel-next {
+        font-size: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .carousel-prev { left: 0px; }
+    .carousel-next { right: 0px; }
+}
+
+@media (max-width: 480px) {
+    .products { padding: 40px 5vw; }
+    .carousel {
+        padding: 10px 2vw;
+    }
+    .carousel-item img {
+        width: 100%;
+        max-height: 200px;
+    }
+    .carousel-item .price { font-size: 1rem; }
+    .carousel-prev,
+    .carousel-next {
+        font-size: 1.2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .carousel-prev { left: 0px; }
+    .carousel-next { right: 0px; }
+}
+
+/* Buy Button Styling */
+.buy-button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+    background-color: #e64a2e;
+}
+
+/* Slide-in Message Styling */
+.slide-in-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+.carousel-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: red; /* Debugging: Add a bright color to check visibility */
+    border: 1px solid black; /* Debugging: Add a border to check layout */
+  }
+  
+  .carousel-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: blue; /* Debugging: Add a bright color to check visibility */
+    border: 1px solid black; /* Debugging: Add a border to check layout */
+  }

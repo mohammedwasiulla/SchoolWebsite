@@ -1,0 +1,35 @@
+/* Home Page Layout */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Section Styling */
+  .hero,
+  .products,
+  .testimonials {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Products & Testimonials Background */
+  .products {
+    background: #f4f4f4;
+  }
+  
+  .testimonials {
+    background: #e0e7ff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero,
+    .products,
+    .testimonials {
+      padding: 40px 15px;
+    }
+  }
+  
